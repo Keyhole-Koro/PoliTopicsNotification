@@ -1,0 +1,39 @@
+{
+  "name": "@keyhole-koro/politopics-notification",
+  "version": "1.0.0",
+  "description": "Shared Discord notification utilities for PoliTopics",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --config jest.config.js --runInBand",
+    "prepare": "npm run build"
+  },
+  "author": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./discord/*": {
+      "types": "./dist/discord/*.d.ts",
+      "default": "./dist/discord/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^25.0.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.7.2"
+  }
+}
