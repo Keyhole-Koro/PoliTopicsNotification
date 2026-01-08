@@ -1,6 +1,15 @@
 import path from "path";
 import { loadEnvFromFile } from "../src/discord/env";
 
+/*
+ * sends a test message and receives success
+ * [Contract] Discord webhook env loader must supply the test URL and posting JSON must return 2xx.
+ * [Reason] Validates shared webhook integration before using in production notifications.
+ * [Accident] Without this, deployments could ship broken webhooks and silently drop alerts.
+ * [Odd] Uses .test.env file path and dynamic timestamp in the payload content.
+ * [History] None.
+ */
+
 describe("Shared Discord webhook integration", () => {
   it("sends a test message and receives success", async () => {
     const envPath = path.resolve(__dirname, "../../.test.env");

@@ -1,7 +1,14 @@
 {
   "name": "@keyhole-koro/politopics-notification",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared Discord notification utilities for PoliTopics",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keyhole-Koro/PoliTopicsNotification.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
