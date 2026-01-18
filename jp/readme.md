@@ -1,4 +1,4 @@
-[Japanese Version](./jp/readme.md)
+[English Version](../readme.md)
 
 ```bash
 export GH_TOKEN=ghp_xxx
