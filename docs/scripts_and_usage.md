@@ -1,5 +1,5 @@
 # Scripts and Usage (PoliTopicsNotification)
-[Japanese Version](./jp/scripts_and_usage.md)
+[日本語版](./jp/scripts_and_usage.md)
 
 This document lists runnable scripts and common workflows for the Notification package.
 Paths are relative to `PoliTopicsNotification`.
